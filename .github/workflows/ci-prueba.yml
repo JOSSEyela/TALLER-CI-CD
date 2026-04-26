@@ -9,10 +9,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    -name: Checkout code
+    - name: Checkout code
       uses: actions/checkout@v3
 
-    -name: verificar Archivos
+    - name: verificar Archivos
       run: |
         if [ -f vistas/index.html ] && [ -f CSS/styles.css ]; then
           echo "Los archivos index.html y styles.css existen."
@@ -26,5 +26,5 @@ jobs:
     needs: ci
 
     steps:
-      -name: Simulacion de despliegue
-      run: echo "Simulando despliegue..."
+      - name: Simulacion de despliegue
+        run: echo "Simulando despliegue..."

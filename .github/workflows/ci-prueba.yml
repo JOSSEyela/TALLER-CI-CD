@@ -14,7 +14,7 @@ jobs:
 
     - name: verificar Archivos
       run: |
-        if [ -f vistas/index.html ] && [ -f CSS/styles.css ]; then
+        if [ -f vistas/index.html ] && [ -f css/styles.css ]; then
           echo "Los archivos index.html y styles.css existen."
         else
           echo "Error: Uno o ambos archivos no existen."
